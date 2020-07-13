@@ -1,4 +1,5 @@
-class Pirate
+class Pirate <Activerecord::Base 
+  has
   attr_accessor :name, :weight, :height
    def initialize(params)
     @name = params[:name]
