@@ -1,5 +1,5 @@
 class Pirate <Activerecord::Base 
-  has
+  has_many :ships 
   attr_accessor :name, :weight, :height
    def initialize(params)
     @name = params[:name]
